@@ -69,23 +69,6 @@ class Program
                 list = entries.getEntries();
                 File.WriteAllLines(filePath, list);
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
         while (answer != "5");
 
