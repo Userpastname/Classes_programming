@@ -1,15 +1,15 @@
 public class Entries
 {
-    List<string> entries = new List<string>();
+    List<string> _entries = new List<string>();
 
     public void addEntry(string able = "")
     {
-        entries.Add(able);
+        _entries.Add(able);
     }
 
 
     public List<string> getEntries()
     {
-        return entries;
+        return _entries;
     }
 }
