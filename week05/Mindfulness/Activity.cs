@@ -19,35 +19,60 @@ public class Activity
         return _endingMessage;
     }
 
-    public void pauseSpinner(int seconds)
+    public void pauseSpinner(int seconds, string prompt)
     {
         for (int i = 0; i < seconds * 4; i++)
         {
             if (i % 4 == 0)
             {
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
                 Console.WriteLine("   o   ");
                 Console.WriteLine("   o   ");
                 Console.WriteLine("   o   ");
             }
             else if (i % 4 == 1)
             {
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
                 Console.WriteLine("      o");
                 Console.WriteLine("   o   ");
                 Console.WriteLine("o      ");
             }
             else if (i % 4 == 2)
             {
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
                 Console.WriteLine("      ");
                 Console.WriteLine("o  o  o");
                 Console.WriteLine("      ");
             }
             else if (i % 4 == 3)
             {
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
+                Console.WriteLine("     ");
                 Console.WriteLine("o      ");
                 Console.WriteLine("   o   ");
                 Console.WriteLine("      o");
             }
-            Thread.Sleep(250);
+            Thread.Sleep(50);
+            Console.WriteLine(prompt);
         }
     }
 

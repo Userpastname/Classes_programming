@@ -15,12 +15,11 @@ class Program
             Console.WriteLine("1. Breathing");
             Console.WriteLine("2. Listing");
             Console.WriteLine("3. Reflection");
-
             input = Console.ReadLine();
 
             if (input == "1")
             {
-                breathingActivity.RunProgram()
+                breathingActivity.RunProgram();
             }
             else if (input == "2") {
                 listingActivity.RunProgram();

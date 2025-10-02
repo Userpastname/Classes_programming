@@ -15,27 +15,33 @@ public class ReflectionActivity : Activity
     public void RunProgram()
     {
         Console.WriteLine(GetStartingMessage());
-        Console.WriteLine(GetRandomPrompt());
-        pauseSpinner(3);
+        string prompt = GetRandomPrompt();
+        Console.WriteLine(prompt);
+        pauseSpinner(3,prompt);
+        
 
         for (int i = 0; i < 3; i++)
         {
-            string questionss = GetRandomPrompt();
+            string questionss = "";
+            
+            questionss = getRandomPromptQuestion();
             do
             {
                 _already = false;
-                foreach (string question in _questions)
+                foreach (string question in _strings)
                 {
                     if (questionss == question)
                     {
+                        questionss = getRandomPromptQuestion();
                         _already = true;
                     }
                 }
+
             } while (_already == true);
 
-            Console.WriteLine(questionss);
-            pauseSpinner(3);
-            Console.WriteLine(questionss);
+
+            pauseSpinner(3, questionss);
+            _strings.Add(questionss);
             Console.ReadLine();
         }
 
