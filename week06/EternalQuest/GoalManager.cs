@@ -3,6 +3,10 @@ using Microsoft.VisualBasic;
 public class GoalManager
 {
     List<Goal> _goals = new List<Goal>();
+    public GoalManager()
+    {
+        
+    }
     public void Start()
     {
         string input = "";
@@ -53,7 +57,7 @@ public class GoalManager
         }
 
 
-        
+
 
     }
 
