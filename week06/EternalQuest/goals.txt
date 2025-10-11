@@ -1,0 +1,3 @@
+goal name: blah,  description: blahhhh, points eligable:60, Complete?: True
+goal name: alalal,  description: fdksl, points per:15, amount completed: 0, total points:0
+goal name: fdasjla,  description: fdsakl, Progress: 0/5, points rewarded: 0
